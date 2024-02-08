@@ -45,6 +45,8 @@ export function Formulario ({setUser}) {
 
 
                 <button>Iniciar sesión</button>
+
+                <p>¿Olvidaste tu conntraseña?</p>
             </form>
 
             {error && <p>Todos los campos son obligatorios</p>}
