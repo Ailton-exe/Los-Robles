@@ -1,5 +1,8 @@
 import "./Formulario.css"
+import { Correo } from "./Correo"
 import { useState } from "react"
+import { Link } from "react-router-dom"
+
 
 export function Formulario ({setUser}) {
     const [nombre, setNombre] = useState("")
@@ -22,6 +25,7 @@ export function Formulario ({setUser}) {
     
 
     return(
+       
         <section>
             <h1>Los Robles</h1>
 
@@ -43,14 +47,15 @@ export function Formulario ({setUser}) {
                 onChange={e => setContraseña(e.target.value)}
                 />
 
-
                 <button>Iniciar sesión</button>
+                <a href="">¿Olvidaste tu contraseña?</a>
 
-                <p>¿Olvidaste tu conntraseña?</p>
             </form>
+            
 
             {error && <p>Todos los campos son obligatorios</p>}
 
         </section>
+        
     )
 }
